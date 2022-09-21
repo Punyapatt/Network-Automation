@@ -5,10 +5,10 @@ import os, signal
 
 
 count = 1
-server = '203.151.106.139'
-port = '10443'
-username = 'punyapat.pl'
-password = '1Net@Infra01'
+server = ''
+port = ''
+username = ''
+password = ''
 pid = os.getpid()
 f = open('test_file.pid', 'w')
 f.write(int(pid))
