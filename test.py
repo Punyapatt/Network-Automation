@@ -10,7 +10,7 @@ pid = os.getpid()
 # f = open('test_file.pid', 'r')
 # f = f.readline().strip()
 
-cmd = './forticlientsslvpn/64bit/forticlientsslvpn_cli --server serveraddress:port --vpnuser username'
+cmd = "./forticlientsslvpn/64bit/forticlientsslvpn_cli --server " + server + ":" + port + " --vpnuser " + username
 
-vpn = peexpect.spawn(cmd)
+vpn = pexpect.spawn(cmd)
 print(vpn.expect_exact("Password for VPN:"))
